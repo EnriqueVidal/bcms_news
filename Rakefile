@@ -9,17 +9,6 @@ require 'rake/rdoctask'
 
 require 'tasks/rails'
 
-# Add your own tasks in files placed in lib/tasks ending in .rake,
-# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
-
-require(File.join(File.dirname(__FILE__), 'config', 'boot'))
-
-require 'rake'
-require 'rake/testtask'
-require 'rake/rdoctask'
-
-require 'tasks/rails'
-
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
@@ -43,6 +32,7 @@ begin
     gemspec.files += Dir["lib/bcms_news.rb"]
     gemspec.files += Dir["lib/bcms_news/*"]
     gemspec.files += Dir["rails/init.rb"]
+    gemspec.version = '1.0.2'
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install jeweler"
