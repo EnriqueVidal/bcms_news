@@ -51,6 +51,8 @@ Gem::Specification.new do |s|
      "test/functional/news_articles_controller_test.rb"
   ]
 
+  s.add_development_dependency 'browsercms'
+
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
