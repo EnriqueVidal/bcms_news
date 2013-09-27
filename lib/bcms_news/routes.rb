@@ -11,3 +11,5 @@ module Cms::Routes
     end
   end
 end
+
+ActionController::Routing::RouteSet::Mapper.send :include, Cms::Routes
